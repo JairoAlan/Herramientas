@@ -37,8 +37,15 @@ public class MainActivity extends AppCompatActivity {
 
         binding.menu.setOnNavigationItemSelectedListener(item -> {
             if(item.getItemId() == R.id.linterna){
+                item.setIcon(getResources().getDrawable(R.drawable.linterna2));
                 iv_engranes_sin.setVisibility(View.GONE);
                 getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, fragmentLinterna).commit();
+            }
+
+            if(item.getItemId() == R.id.musica){
+                item.setIcon(getResources().getDrawable(R.drawable.musica2));
+                iv_engranes_sin.setVisibility(View.GONE);
+                getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,fragmentMusica).commit();
             }
             return true;
         });
