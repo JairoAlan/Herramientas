@@ -15,13 +15,6 @@
         android:icon="@drawable/nivel"
         android:title="Nivel" />
 
-<!--    <item-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:id="@+id/nivelEnc"-->
-<!--        android:icon="@drawable/nivel2"-->
-<!--        android:title="Nivel"-->
-<!--        android:visible="false"/>-->
 
     <item
         android:layout_width="wrap_content"
@@ -30,12 +23,5 @@
         android:icon="@drawable/musica"
         android:title="Musica" />
 
-<!--    <item-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:id="@+id/musicaEnc"-->
-<!--        android:icon="@drawable/musica2"-->
-<!--        android:title="Nivel"-->
-<!--        android:visible="false"/>-->
 
 </menu>
