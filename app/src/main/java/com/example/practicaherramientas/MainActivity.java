@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.DrawableRes;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -46,6 +47,12 @@ public class MainActivity extends AppCompatActivity {
                 item.setIcon(getResources().getDrawable(R.drawable.musica2));
                 iv_engranes_sin.setVisibility(View.GONE);
                 getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,fragmentMusica).commit();
+            }
+
+            if(item.getItemId() == R.id.nivel){
+                item.setIcon(getResources().getDrawable(R.drawable.nivel2));
+                iv_engranes_sin.setVisibility(View.GONE);
+                getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, fragmentNivel).commit();
             }
             return true;
         });
